@@ -1,0 +1,36 @@
+{
+  "name": "ceping365",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "next-dev": "next",
+    "next-build": "next build",
+    "next-start": "next start",
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pampang/ceping365.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pampang/ceping365/issues"
+  },
+  "homepage": "https://github.com/pampang/ceping365#readme",
+  "dependencies": {
+    "@zeit/next-less": "1.0.1",
+    "axios": "0.18.0",
+    "koa": "^2.0.1",
+    "koa-bodyparser": "4.2.1",
+    "koa-router": "^7.1.0",
+    "less": "3.9.0",
+    "next": "7.0.2",
+    "react": "16.7.0",
+    "react-dom": "16.7.0"
+  }
+}

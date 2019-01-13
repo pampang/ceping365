@@ -1,0 +1,68 @@
+@import '../../util/css/_rem.less';
+@import '../../util/css/reset.less';
+
+body {
+  background-color: #FFFDC0;
+}
+
+.question {
+  margin: 0 1.2rem;
+  padding: 1.2rem;
+  background-color: #FFFDC0;
+
+  &__title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #2E94B9;
+    text-align: left;
+    padding: 1.2rem 0;
+    border-bottom: 1px solid #efefef;
+    margin: 1.2rem 0;
+  }
+
+  &__option {
+    width: 100%;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #2E94B9;
+    border-left: 3px solid rgb(29, 166, 207);
+    background-color: rgb(245, 251, 253);
+    border-radius: 3px;
+    padding: 0.8rem;
+    box-sizing: border-box;
+    margin-bottom: 1.2rem;
+
+    &:active {
+      border-color: #D25565;
+      color: #D25565;
+      // background-color: #D25565;
+      // opacity: 0.5;
+      // transition: background-color 2s;
+    }
+
+//     #2E94B9 rgba(46,148,185,1)
+// #FFFDC0 rgba(255,253,192,1)
+// #F0B775 rgba(240,183,117,1)
+// #D25565 rgba(210,85,101,1)
+  }
+}
+
+.buttonList {
+  width: 100%;
+  padding: 0 1.2rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  width: 40%;
+  margin: auto;
+  padding: 0.4rem 0;
+  background-color: #F0B775;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 1.4rem;
+}

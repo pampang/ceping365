@@ -3,7 +3,7 @@ const next = require('next')
 const Router = require('koa-router');
 var bodyParser = require('koa-bodyparser');
 
-const port = parseInt(process.env.PORT, 10) || 80
+const port = parseInt(process.env.PORT, 10) || 8889 // 使用 nginx 转到 8889
 const dev = process.env.NODE_ENV !== 'production'
 const app = next({ dev })
 const handle = app.getRequestHandler()

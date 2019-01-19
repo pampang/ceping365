@@ -1,8 +1,9 @@
 import React from 'react';
 import Router from 'next/router';
-import Head from 'next/head';
+// import Head from 'next/head';
 import axios from 'axios';
 
+import Header from '../../components/header';
 import DISC_QUESTIONS from './disc_questions.json';
 import './style.less';
 
@@ -109,10 +110,7 @@ export default class extends React.Component {
     const { currentIndex } = this.state;
     return (
       <div className='list'>
-        <Head>
-          <title>DISC性格测评-放心做，绝对免费！</title>
-          <meta name="viewport" content="initial-scale=1.0, width=device-width" key="viewport" />
-        </Head>
+        <Header title="DISC性格测评-放心做，绝对免费！" />
         {this.renderQuestion()}
         {this.renderButtons()}
       </div>

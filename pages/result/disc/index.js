@@ -1,7 +1,8 @@
 import React from 'react';
 import Router from 'next/router';
-import Head from 'next/head';
+// import Head from 'next/head';
 import axios from 'axios';
+import Header from '../../components/header';
 
 import DISC_ANSWERS from './disc_answers.json';
 import './style.less';
@@ -40,10 +41,8 @@ export default class extends React.Component {
     const { answer } = this.props;
     return (
       <div className='container'>
-        <Head>
-          <title>结果页-免费性格测评-放心做，绝对免费！</title>
-          <meta name="viewport" content="initial-scale=1.0, width=device-width" key="viewport" />
-        </Head>
+        <Header title="结果页-免费性格测评-放心做，绝对免费！" />
+
         <div className="answer">
           <p className="answer__description">
             {answer.description}
